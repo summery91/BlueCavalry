@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理 | 后台主页</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/login.min.css">
+	<link rel="stylesheet" href="css/index.min.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div id="topSide">
+		<div id="topSideLeft">后台管理</div>
+		<div id="topSideRight">
+			杨凯自传
+			<div id="topSideInfo">
+				<nav class="navbar-inverse" role="navigation">
+		            <div>
+		              <ul class="nav navbar-nav navbar-left">           
+		                <li class="dropdown">
+		                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">cobish <b class="caret"></b></a>
+		                  <span class="dropdown-arrow"></span>
+		                  <ul class="dropdown-menu">
+		                    <li><a href="#">修改密码</a></li>
+		                    <li><a href="#">退出登录</a></li>
+		                  </ul>
+		                </li>
+		               </ul>
+		            </div>
+          		</nav>
+			</div>
+		</div>
+	</div>
+	<div id="leftAndRight">
+		<!-- 左边 -->
+		<div id="leftSide">
+			<div id="adminInfo">
+				<img src="images/avatar/avatar5.png" />Hello , wabish
+			</div>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon-img fui-list"></span>
+						<span class="icon-text">全部文件</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#"  class="active">
+						<span class="icon-img fui-photo"></span>
+						<span class="icon-text">图片</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-img fui-mail"></span>
+						<span class="icon-text">文档</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-img fui-video"></span>
+						<span class="icon-text">视频</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-img fui-eye"></span>
+						<span class="icon-text">种子</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-img fui-volume"></span>
+						<span class="icon-text">音乐</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-img fui-plus"></span>
+						<span class="icon-text">其他</span>
+						<span class="fui-arrow-left"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 右边 -->
+	    <div id="rightSide">
+	    	<div id="rightTop">
+	    		<a href="#">
+	    			<span class="icon-img fui-photo"></span>&nbsp;图片
+	    		</a>
+	    		<span class="fui-arrow-right"></span>&nbsp;&nbsp;阿甘
+			</div>
+			<div id="rightContent">
+				<div id="contentTable">添加佳易得产品</div>
+				<div class="contentInput">
+					<span>标题：</span>
+			        <input type="text" placeholder="请输入标题" class="form-control" />   
+				</div>
+				<div class="contentInput">
+					<span>摘要：</span>
+			        <input type="text" placeholder="请输入标题" class="form-control" />        
+				</div>
+				<div class="contentInput">
+					<span>类型：</span>
+			        <select class="form-control">
+			            <option value="1">Spider Man</option>
+			            <option value="2">Wolverine</option>
+			            <option value="3">Captain America</option>
+			            <option value="X-Men" selected="selected">X-Men</option>
+			            <option value="Crocodile">Crocodile</option>
+			        </select>   
+				</div>
+				<div class="contentInput">
+					<span>标题：</span>
+			        <input type="text" placeholder="请输入标题" class="form-control" />   
+				</div>
+				<div class="contentInput">
+					<span>摘要：</span>
+			        <input type="text" placeholder="请输入标题" class="form-control" />        
+				</div>
+				<div class="contentInput">
+					<span>类型：</span>
+			        <select class="form-control">
+			            <option value="1">Spider Man</option>
+			            <option value="2">Wolverine</option>
+			            <option value="3">Captain America</option>
+			            <option value="X-Men" selected="selected">X-Men</option>
+			            <option value="Crocodile">Crocodile</option>
+			        </select>   
+				</div>
+				<div class="contentTextarea">
+					<span>内容：</span>   
+			        <textarea class="form-control" rows="6" placeholder="这里打算放个ueditor富文本编辑器的"></textarea>     
+				</div>
+				<div id="contentBtn">
+				    <a href="#fakelink" class="btn btn-danger">清空</a>
+					<a href="#fakelink" class="btn btn-primary">修改</a>
+				</div>
+			</div>
+	    </div>
+
+	</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.min.js"></script>
+</html>
