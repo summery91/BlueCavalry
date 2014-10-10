@@ -1,0 +1,11 @@
+/*描述：我要寄件页面样式表
+ 作者：梁银乔
+ 时间：2014-10-10*/
+ *{
+ 	padding: 0;
+ 	margin: 0;
+ 	font-family: 微软雅黑;
+ }
+ .header{
+ 	height:40px;
+ }
