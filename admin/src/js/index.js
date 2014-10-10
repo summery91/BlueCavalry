@@ -1,3 +1,4 @@
+// window加载完成时
 window.onload = function(){
 	// 随时调整左边栏高度
 	changeWidthAndHeight();
@@ -11,18 +12,61 @@ window.onload = function(){
 	var changePwdChange = document.getElementById("changePwdChange");
 	var logoutClose = document.getElementById("logoutClose");
 	var logoutYes = document.getElementById("logoutYes");
+	var rightContent = document.getElementById("rightContent");
 
+	// 删除或修改事件
+	rightContent.onclick = function() {
+		// 获取事件源id
+		var target = getEventTarget();
+		if (target.title != "修改" && target.title != "删除") {
+			return false;
+		}
+
+		var id = target.parentNode.parentNode.parentNode.id;
+		// 删除事件
+		if (target.title == "删除") {
+			logout.getElementsByTagName("p")[0].innerHTML = "确认删除？";
+			logout.style.display = "block";
+			shadow.style.display = "block";
+
+			logoutYes.onclick = function() {
+				logout.style.display = "none";
+				shadow.style.display = "none";
+				showTip("删除成功id="+id);
+			};
+		}
+		// 修改事件
+		else {
+			alert("修改");
+		}
+		
+	};
 
 	// 修改密码
 	changePwdBtn.onclick = function() {
 		changePwd.style.display = "block";
 		shadow.style.display = "block";
+
+		changePwdChange.onclick = function() {
+			// alert("修改了密码");
+			changePwd.style.display = "none";
+			shadow.style.display = "none";
+			showTip("修改密码成功");
+		};
 	};
 
 	// 退出登录
 	logoutBtn.onclick = function() {
 		logout.style.display = "block";
 		shadow.style.display = "block";
+
+		logoutYes.onclick = function() {
+			// alert("成功退出登录");
+			logout.style.display = "none";
+			shadow.style.display = "none";
+
+			showTip("成功退出登录");
+		};
 	};
 
 	// 关闭修改密码
@@ -39,6 +83,7 @@ window.onload = function(){
 
 };
 
+// window大小改变时
 window.onresize = function(){
 	// 随时调整左边栏高度
 	changeWidthAndHeight();
@@ -53,4 +98,23 @@ function changeWidthAndHeight () {
 	document.getElementById('rightSide').style.height = (height - 50) + "px";                        // 50是上边栏高度
 	document.getElementById('rightSide').style.width = (width>=1000) ? width-225+"px" : "1000px";    // 小于1000则为1000
 	document.getElementById('topSideRight').style.width = (width>=1000) ? width-225+"px" : "1000px"; // 小于1000则为1000
+}
+
+// 获取事件源
+function getEventTarget(e) {
+  e = e || window.event;
+  return e.target || e.srcElement;
+}
+
+function showTip(tip) {
+	var shadow = document.getElementById("shadow");
+	var alertTip = document.getElementById("alertTip");
+	alertTip.innerHTML = tip;
+	alertTip.style.display = "block";
+	shadow.style.display = "block";
+
+	setTimeout(function(){
+		alertTip.style.display = "none";
+		shadow.style.display = "none";
+	},1500);
 }
