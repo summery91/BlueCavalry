@@ -157,7 +157,7 @@ body {
 #contentTable span, .contentTr span {
 	display: block;
 	float: left;
-	width: 25%;
+	width: 20%;
 	line-height: 45px;
 	text-indent: 20px;
 }
