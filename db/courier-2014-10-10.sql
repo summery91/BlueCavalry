@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2014 年 10 月 10 日 08:52
+-- 生成日期: 2014 年 10 月 10 日 11:57
 -- 服务器版本: 5.5.20
 -- PHP 版本: 5.3.10
 
@@ -19,6 +19,18 @@ SET time_zone = "+00:00";
 --
 -- 数据库: `courier`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `backend`
+--
+
+CREATE TABLE IF NOT EXISTS `backend` (
+  `account` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'admin',
+  `password` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'admin',
+  PRIMARY KEY (`account`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
