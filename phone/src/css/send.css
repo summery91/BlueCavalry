@@ -7,5 +7,23 @@
  	font-family: 微软雅黑;
  }
  .header{
- 	height:40px;
+ 	height:50px;
+ 	width: 100%;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	background: #06CC8A;
+ }
+ .header h3{
+
+ 	color: #ffffff;
+ 	font-weight: lighter;
+ }
+ .content ul{
+ 	background: red;
+ }
+ .content .pic_name{
+ 	display: inline-block;
+ 	width: 60px;
+ 	height: 60px;
+ 	background: url(../images/name.png) no-repeat 0 0;
  }
