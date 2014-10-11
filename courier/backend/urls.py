@@ -2,6 +2,9 @@
 from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('backend.views',
-	url(r'^login/$', 'login', {'template_name':'login.html'}),    # 登录
-	url(r'^index/$', 'index', {'template_name':'index.html'}),    # index页面，仅仅为了测试
+	url(r'^login/$', 'login'),                # 登录
+	url(r'^logout/$', 'logout'),              # 退出登录
+	url(r'^sendList/$', 'sendList'),          # 寄件列表页面
+	url(r'^receiveList/$', 'receiveList'),    # 收件列表页面
+	url(r'^login_handle/$', 'login_handle'),  # 登录表单提交验证
 )

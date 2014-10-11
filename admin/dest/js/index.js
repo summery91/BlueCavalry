@@ -14,6 +14,15 @@ window.onload = function(){
 	var logoutYes = document.getElementById("logoutYes");
 	var rightContent = document.getElementById("rightContent");
 
+	// 左边显示当前页面
+	var localUrl = window.location.href;
+	var aClick = document.getElementById("leftSide").getElementsByTagName("ul")[0].getElementsByTagName("a");
+	for(var i = 0 ;i < aClick.length; i++) {
+		if (localUrl.indexOf(aClick[i]) >= 0) {
+			aClick[i].className += " active";
+		}
+	}
+
 	// 删除或修改事件
 	rightContent.onclick = function() {
 		// 获取事件源id

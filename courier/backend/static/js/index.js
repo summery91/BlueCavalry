@@ -74,7 +74,7 @@ window.onload = function(){
 		logoutYes.onclick = function() {
 			logout.style.display = "none";
 			shadow.style.display = "none";
-			window.location.href="/backend/logout"; 
+			window.location.href="/backend/logout/"; 
 		};
 	};
 

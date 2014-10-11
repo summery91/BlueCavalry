@@ -1,6 +1,5 @@
 # coding: utf-8
-# Django settings for courier project.
-import os.path
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -110,8 +109,8 @@ ROOT_URLCONF = 'courier.urls'
 WSGI_APPLICATION = 'courier.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'backend/templates').replace('\\','/'),
-    os.path.join(os.path.dirname(__file__), 'express/templates').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../backend/templates').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../express/templates').replace('\\','/'),
 )
 
 INSTALLED_APPS = (
