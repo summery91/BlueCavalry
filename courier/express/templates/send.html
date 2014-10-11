@@ -10,19 +10,59 @@
 </head>
 
 <body>
-	<div class="header">
-		<h3>上门取件</h3>
-	</div>
-	<div class="content">
-		<ul>
-			<li><span class="pic_name"></span><input type="text" name="" /></li>
-			<li><span class="pic_phone"></span><input type="text" name="" /></li>
-			<li><span class="pic_addr"></span><input type="text" name="" /></li>
-			<li><span class="pic_send_addr"></span><input type="text" name="" /></li>
-			<li><span class="pic_description"></span><input type="text" name="" /></li>
-		</ul>
-		<div>取件时间</div>
-	</div>
+    <div class="header">
+        <h3>上门取件</h3>
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                <span class="pic_name"></span>
+                <input type="text" name="" placeholder="请输入姓名" />
+            </li>
+            <li>
+                <span class="pic_phone"></span>
+                <input type="text" name="" placeholder="请输入电话" />
+            </li>
+            <li>
+                <span class="pic_addr"></span>
+                <input type="text" name="" placeholder="请输入取件地址" />
+            </li>
+            <li>
+                <span class="pic_send_addr"></span>
+                <input type="text" name="" placeholder="请输入邮寄地址" />
+            </li>
+            <li>
+                <span class="pic_description"></span>
+                <input type="text" name="" placeholder="添加备注" />
+            </li>
+        </ul>
+        <div class="time">
+            <span class="time_label">取件时间</span>
+            <span class="pic_minus"></span>
+            <input type="text" value="9:00" />
+            <span class="pic_plus"></span>
+            <span>~</span>
+            <span class="pic_minus"></span>
+            <input type="text" value="11:00" />
+            <span class="pic_plus"></span>
+        </div>
+        <div class="add_value">预估寄件价格
+            <img src="/static/images/add_value.png" />
+            <div class="value_area">
+                <div class="value_trangle">
+                    <!--本Div只来实现三角形，无其他作用-->
+                    <div class="inner_trangle"></div>
+                </div>
+                <ul>
+                    <li>快递公司</li>
+                    <li>收件人地址</li>
+                    <li>快件重量</li>
+                    <li>价格预估</li>
+                </ul>
+            </div>
+        </div>
+        <input type="button" value="立即下单" />
+    </div>
 
 </body>
 

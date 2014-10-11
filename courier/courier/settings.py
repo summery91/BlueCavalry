@@ -111,7 +111,7 @@ WSGI_APPLICATION = 'courier.wsgi.application'
 
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'backend/templates').replace('\\','/'),
-    os.path.join(os.path.dirname(__file__), 'express/templates').replace('\\','/')
+    os.path.join(os.path.dirname(__file__), 'express/templates').replace('\\','/'),
 )
 
 INSTALLED_APPS = (
